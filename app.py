@@ -10,7 +10,7 @@ st.markdown(
 st.markdown('Enter the details below:')
 
 # api url
-API_URL = 'https://laptop-price-predictor-api-zey7.onrender.com/'
+API_URL = 'https://laptop-price-predictor-api-j6m8.onrender.com/predict'
 
 
 col1, col2, col3, col4 = st.columns(4)
