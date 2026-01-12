@@ -75,8 +75,9 @@ if st.button('Predict'):
 
     # pass the data to the api
     try:
-        response = requests.post(API_URL, json=input_data)
-        prediction = response.json()
+        with st.spinner('Predicting Price'):
+            response = requests.post(API_URL, json=input_data)
+            prediction = response.json()
 
         if response.status_code == 200:
             predicted_price = prediction['predicted_price']
